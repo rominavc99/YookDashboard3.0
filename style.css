@@ -710,7 +710,7 @@ a {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 46.875em) {
+@media only screen and (max-width: 300px) {
   .grid {
     display: grid;
     grid-template-columns: 240px calc(100% - 240px);

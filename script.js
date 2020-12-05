@@ -9,7 +9,7 @@ $(document).ready(() => {
   setSidenavCloseListener();
 });
 
-// Set constants and grab needed elements
+// CONSTANTES Y ELEMENTOS NECESARIONS
 const sidenavEl = $('.sidenav');
 const gridEl = $('.grid');
 const SIDENAV_ACTIVE_CLASS = 'sidenav--active';
@@ -23,7 +23,7 @@ function toggleClass(el, className) {
   }
 }
 
-// User avatar dropdown functionality
+// DROPDOWN MENU DEL AVATAR
 function setUserDropdownListener() {
   const userAvatar = $('.header__avatar');
 
@@ -33,7 +33,7 @@ function setUserDropdownListener() {
   });
 }
 
-// Sidenav list sliding functionality
+// SIDENAV
 function setSidenavListeners() {
   const subHeadings = $('.navList__subheading'); console.log('subHeadings: ', subHeadings);
   const SUBHEADING_OPEN_CLASS = 'navList__subheading--open';
@@ -56,7 +56,7 @@ function setSidenavListeners() {
   });
 }
 
-// Draw the chart
+// dRAW CHART ANIMATION JUST IN CASE
 function renderChart() {
   const chart = AmCharts.makeChart( "chartdiv", {
     "type": "serial",
@@ -132,8 +132,8 @@ function toggleClass(el, className) {
   }
 }
 
-// If user opens the menu and then expands the viewport from mobile size without closing the menu,
-// make sure scrolling is enabled again and that sidenav active class is removed
+// SI EL USUARIO ABRÉ EL MENÚ Y EXPANDE EL VIEWPORT SIN CERRAR EL MENÚ
+// ASEGURARSE DE QUE EL SCROLLING ESTÉ ACTIVADO
 function addResizeListeners() {
   $(window).resize(function(e) {
     const width = window.innerWidth; console.log('width: ', width);
@@ -145,7 +145,7 @@ function addResizeListeners() {
   });
 }
 
-// Menu open sidenav icon, shown only on mobile
+// ICONO DE SIDENAV SOLO EM MOBILE
 function setMenuClickListener() {
   $('.header__menu').on('click', function(e) { console.log('clicked menu icon');
     toggleClass(sidenavEl, SIDENAV_ACTIVE_CLASS);
@@ -153,7 +153,7 @@ function setMenuClickListener() {
   });
 }
 
-// Sidenav close icon
+// ICONO DE SIDENAV CERRADO
 function setSidenavCloseListener() {
   $('.sidenav__brand-close').on('click', function(e) {
     toggleClass(sidenavEl, SIDENAV_ACTIVE_CLASS);
