@@ -710,6 +710,10 @@ a {
   font-weight: bold;
 }
 
+a {color:#ffffff;}  /* unvisited link */ 
+a:visited {color: #ffffff;} /* visited link */ 
+
+
 @media only screen and (max-width: 300px) {
   .grid {
     display: grid;
