@@ -713,6 +713,10 @@ a {
 a {color:#ffffff;}  /* unvisited link */ 
 a:visited {color: #ffffff;} /* visited link */ 
 
+.container{
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
 
 @media only screen and (max-width: 300px) {
   .grid {
