@@ -5,10 +5,12 @@
   <title>Yook Dashboard</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    
     <link rel="shortcut icon" type="image/png" href="#"><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/styleTienda.css">
 
 </head>
+
 <body>
 <!-- partial:index.partial.html -->
 <div class="grid">
@@ -156,148 +158,124 @@
      
     </div> <!-- /.main__overview -->
 
-    <div class="main__cards">
+    <div class="main__cardstienda">
 
-     <!-- <div class="card">
-        <div class="card__header">
-          <div class="card__header-title text-light">Your <strong>Events</strong>
-            <a href="#" class="card__header-link text-bold">View All</a>
-          </div>
-          <div class="settings">
-            <div class="settings__block"><i class="fas fa-edit"></i></div>
-            <div class="settings__block"><i class="fas fa-cog"></i></div>
-          </div>
-        </div>
-        <div class="card__main">
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-gift"></i></div>
-            <div class="card__time">
-              <div>today</div>
+        <div class="headertienda">
+            <div class="containertienda">
+               <div class="navbartienda">
+                   <nav class="navtienda">
+                    <ul id="MenuItems">
+                      <li><a href="tienda.html">Productos</a></li>
+                  </ul>
+                </nav>
+                   <a href="cart.html"><img src="images/shopping-cart.png" width="40px" height="40px"></a>
+                   <img src="images/shopping-cart.png" onclick="menutoggle()" class="menu-icontienda">
+               </div>
+               
+                
             </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">Jonathan G</div>
-              <div class="card__description">Going away party at 8:30pm. Bring a friend!</div>
-              <div class="card__note">1404 Gibson St</div>
             </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-plane"></i></div>
-            <div class="card__time">
-              <div>Tuesday</div>
+    
+      <!--------------single-product--------------->
+<div class="small-container single-product">
+    <div class="rowtienda">
+        <div class="col-2tienda">
+            <img src="https://www.flaticon.es/svg/vstatic/svg/1215/1215910.svg?token=exp=1610506037~hmac=0216db1bfbacc27de487ef921978cfa8" width="100%" id="ProductImg">
+            <div class="small-img-row">
+               <div class="small-img-col">
+                   <img src="https://www.flaticon.es/svg/vstatic/svg/551/551227.svg?token=exp=1610506044~hmac=3523af88ea7493439713dea1b3184f74" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="https://www.flaticon.es/svg/vstatic/svg/551/551125.svg?token=exp=1610506546~hmac=c7d9c748a3571c2950068b01436a44c1" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="https://www.flaticon.es/svg/vstatic/svg/1076/1076102.svg?token=exp=1610506658~hmac=0f93e17874dfa62b1e5067a5a8ba4131" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="https://www.flaticon.es/svg/vstatic/svg/3043/3043788.svg?token=exp=1610506595~hmac=ff863136d590d1a11dbb9efc37b6d9a3" class="small-img" width="100%">
+               </div>
+    
             </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">Matthew H</div>
-              <div class="card__description">Flying to Bora Bora at 4:30pm</div>
-              <div class="card__note">Delta, Gate 27B</div>
-            </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-book"></i></div>
-            <div class="card__time">
-              <div>Thursday</div>
-            </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">National Institute of Science</div>
-              <div class="card__description">Join the institute for an in-depth look at Stephen Hawking</div>
-              <div class="card__note">7:30pm, Carnegie Center for Science</div>
-            </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-heart"></i></div>
-            <div class="card__time">
-              <div>Friday</div>
-            </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">24th Annual Heart Ball</div>
-              <div class="card__description">Join us and contribute to your favorite local charity.</div>
-              <div class="card__note">6:45pm, Austin Convention Ctr</div>
-            </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-heart"></i></div>
-            <div class="card__time">
-              <div>Saturday</div>
-            </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">Little Rock Air Show</div>
-              <div class="card__description">See the Blue Angels fly with roaring thunder</div>
-              <div class="card__note">11:00pm, Jacksonville Airforce Base</div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="card">
-        <div class="card__header">
-          <div class="card__header-title text-light">Afiliados <strong>Recientes</strong>
-            <a href="afiliados.html" class="card__header-link text-bold">Ver todos</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="documents">
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-              
-            </div>
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-              
-            </div>
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-              
-            </div>
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__header">
-          <div class="card__header-title text-light">Afiliados por <strong>Niveles</strong>  </div>
-        </div>
-        <div class="card">
-          <div class="documents">
             
-            <div class="document">
-              <div class="document__img1"></div>
-              <div class="document__title">1</div>
-            </div>
-
-            <div class="document">
-              <div class="document__img2"></div>
-              <div class="document__title">2</div>
-            </div>
-
-            <div class="document">
-              <div class="document__img3"></div>
-              <div class="document__title">0</div>
-            </div>
-
-            <div class="document">
-              <div class="document__img4"></div>
-              <div class="document__title">0</div>
-            </div>
-
-            <div class="document">
-              <div class="document__img5"></div>
-              <div class="document__title">0</div>
-            </div>
-
-          </div>
         </div>
-        <div>
-
-
-
+        <div class="col-2tienda">   
+            <h1>Producto 1</h1>
+            <h4>50 puntos</h4>
+            
+            <select>
+               <option>Selecciona</option>
+               <option>opción 1</option>
+               <option>opción 2</option>
+               <option>opción 3</option>
+               <option>opción 4</option>
+               <option>opción 5</option>
+           </select>
+            
+            <input type="number" value="1">
+            <a href="cart.html" class="btntienda">Agregar al Carrito</a>
+            
+            <h3>DETALLES DEL PRODUCTO <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, optio. Tenetur impedit aspernatur at eius odio excepturi perspiciatis. Aliquid sit accusantium, a repellendus aut tenetur, facilis et aperiam assumenda temporibus omnis consectetur officia minima magni suscipit ad laboriosam? Laboriosam nulla pariatur est minima doloribus expedita aperiam hic odio autem a?</p>
         </div>
-      </div>
+    </div>
+</div>
+
+     
+     <!-------------js for toggle menu-------------->
+     
+     <script>
+         
+         var MenuItems = document.getElementById("MenuItems");
+         
+         MenuItems.style.maxHeight = "0px";
+         
+         function menutoggle()
+         {
+             if(MenuItems.style.maxHeight == "0px")
+                 {
+                     MenuItems.style.maxHeight = "200px";
+                 }else
+                 {
+                     MenuItems.style.maxHeight = "0px"
+                 } 
+         }
+
+         //-------------Produc Gallery------------
+    
+    var ProductImg = document.getElementById("ProductImg");
+    
+    var SmallImg = document.getElementsByClassName("small-img");
+       
+ 
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        
+        }
+
+  //-------------End Produc Gallery------------  
+    
+         
+     </script>
+
+     
+     
+
     </div> <!-- /.main-cards -->
   </main>
 

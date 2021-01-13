@@ -5,8 +5,8 @@ html, body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a {
-  text-decoration: none;
+a:link, a:visited, a:active {
+  text-decoration:none;
 }
 
 .text-light {
@@ -323,6 +323,14 @@ a {
 }
 .main__cards {
   display: block;
+  column-count: 1;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+.main__cardstienda {
+  display: flex;
+  flex-direction: column;
   column-count: 1;
   column-gap: 20px;
   margin: 20px;

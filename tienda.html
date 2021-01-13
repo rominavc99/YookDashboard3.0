@@ -5,10 +5,12 @@
   <title>Yook Dashboard</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    
     <link rel="shortcut icon" type="image/png" href="#"><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/styleTienda.css">
 
 </head>
+
 <body>
 <!-- partial:index.partial.html -->
 <div class="grid">
@@ -156,148 +158,148 @@
      
     </div> <!-- /.main__overview -->
 
-    <div class="main__cards">
+    <div class="main__cardstienda">
 
-     <!-- <div class="card">
-        <div class="card__header">
-          <div class="card__header-title text-light">Your <strong>Events</strong>
-            <a href="#" class="card__header-link text-bold">View All</a>
-          </div>
-          <div class="settings">
-            <div class="settings__block"><i class="fas fa-edit"></i></div>
-            <div class="settings__block"><i class="fas fa-cog"></i></div>
-          </div>
-        </div>
-        <div class="card__main">
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-gift"></i></div>
-            <div class="card__time">
-              <div>today</div>
+        <div class="headertienda">
+            <div class="containertienda">
+               <div class="navbartienda">
+                   <nav class="navtienda">
+                    <ul id="MenuItems">
+                      <li><a href="tienda.html">Productos</a></li>
+                  </ul>
+                </nav>
+                   <a href="cart.html"><img src="images/shopping-cart.png" width="40px" height="40px"></a>
+                   <img src="images/shopping-cart.png" onclick="menutoggle()" class="menu-icontienda">
+               </div>
+                <div class="rowtienda">
+                     <div class="col-2tienda">
+     
+                         <h1 style="color: white; font-size: 55px;">Tanichi<br>Yook!</h1>
+                         <p>Compra con nosotros los mejores productos.<br> Exclusivos para nuestros miembros!</p>
+                         <a href="3" class="btntienda" style="color: aliceblue;">Obtener más puntos</a>
+                     </div>
+                     <div class="col-2tienda">
+                         <img src="https://raw.githubusercontent.com/rominavc99/YookDashboard3.0/main/pngaaa.com-1233704.png">
+                     </div>
+                    
+                </div>
+                
             </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">Jonathan G</div>
-              <div class="card__description">Going away party at 8:30pm. Bring a friend!</div>
-              <div class="card__note">1404 Gibson St</div>
             </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-plane"></i></div>
-            <div class="card__time">
-              <div>Tuesday</div>
-            </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">Matthew H</div>
-              <div class="card__description">Flying to Bora Bora at 4:30pm</div>
-              <div class="card__note">Delta, Gate 27B</div>
-            </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-book"></i></div>
-            <div class="card__time">
-              <div>Thursday</div>
-            </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">National Institute of Science</div>
-              <div class="card__description">Join the institute for an in-depth look at Stephen Hawking</div>
-              <div class="card__note">7:30pm, Carnegie Center for Science</div>
-            </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-heart"></i></div>
-            <div class="card__time">
-              <div>Friday</div>
-            </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">24th Annual Heart Ball</div>
-              <div class="card__description">Join us and contribute to your favorite local charity.</div>
-              <div class="card__note">6:45pm, Austin Convention Ctr</div>
-            </div>
-          </div>
-          <div class="card__row">
-            <div class="card__icon"><i class="fas fa-heart"></i></div>
-            <div class="card__time">
-              <div>Saturday</div>
-            </div>
-            <div class="card__detail">
-              <div class="card__source text-bold">Little Rock Air Show</div>
-              <div class="card__description">See the Blue Angels fly with roaring thunder</div>
-              <div class="card__note">11:00pm, Jacksonville Airforce Base</div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="card">
-        <div class="card__header">
-          <div class="card__header-title text-light">Afiliados <strong>Recientes</strong>
-            <a href="afiliados.html" class="card__header-link text-bold">Ver todos</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="documents">
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-              
-            </div>
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-              
-            </div>
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-              
-            </div>
-            <div class="document">
-              <div class="document__img"></div>
-              <div class="document__title">Jonh Doe</div>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__header">
-          <div class="card__header-title text-light">Afiliados por <strong>Niveles</strong>  </div>
-        </div>
-        <div class="card">
-          <div class="documents">
+    
             
-            <div class="document">
-              <div class="document__img1"></div>
-              <div class="document__title">1</div>
+     <!-------------- Products -------------->
+       
+       
+       <div class="small-container">
+             <h2 class="titletienda">Nuestros Productos</h2>
+                <div class="rowtienda">
+                   
+                    <div class="col-4">
+                        <img src="https://www.flaticon.es/svg/static/icons/svg/594/594846.svg">
+                        <h4><a style="color: black;" href="product-details.html">Producto 1</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>70 puntos</p>
+                    </div> 
+                    <div class="col-4">
+                        <img src="https://www.flaticon.es/svg/static/icons/svg/594/594846.svg">
+                        <h4><a style="color: black;" href="product-details.html">Producto 2</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>40 puntos</p>
+                    </div> 
+                     <div class="col-4">
+                        <img src="https://www.flaticon.es/svg/static/icons/svg/594/594846.svg">
+                        <h4><a style="color: black;" href="product-details.html">Producto 3</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>50 puntos</p>
+                    </div> 
+                    <div class="col-4">
+                        <img src="https://www.flaticon.es/svg/static/icons/svg/594/594846.svg">
+                        <h4><a style="color: black;" href="product-details.html">Producto 4</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>50 puntos</p>
+                    </div> 
+                    <div class="col-4">
+                        <img src="https://www.flaticon.es/svg/static/icons/svg/594/594846.svg">
+                        <h4><a style="color: black;" href="product-details.html">Producto 5</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>50 puntos</p>
+                    </div> 
+                    <div class="col-4">
+                        <img src="https://www.flaticon.es/svg/static/icons/svg/594/594846.svg">
+                        <h4><a style="color: black;" href="product-details.html">Producto 6</a></h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>50 puntos</p>
+                    </div> 
+                </div>
+             
+                </div>
             </div>
+            
+   
+         
+     </div>
+     
+     
+     
+     <!-------------js for toggle menu-------------->
+     
+     <script>
+         
+         var MenuItems = document.getElementById("MenuItems");
+         
+         MenuItems.style.maxHeight = "0px";
+         
+         function menutoggle()
+         {
+             if(MenuItems.style.maxHeight == "0px")
+                 {
+                     MenuItems.style.maxHeight = "200px";
+                 }else
+                 {
+                     MenuItems.style.maxHeight = "0px"
+                 } 
+         }
+         
+     </script>
+     
 
-            <div class="document">
-              <div class="document__img2"></div>
-              <div class="document__title">2</div>
-            </div>
-
-            <div class="document">
-              <div class="document__img3"></div>
-              <div class="document__title">0</div>
-            </div>
-
-            <div class="document">
-              <div class="document__img4"></div>
-              <div class="document__title">0</div>
-            </div>
-
-            <div class="document">
-              <div class="document__img5"></div>
-              <div class="document__title">0</div>
-            </div>
-
-          </div>
-        </div>
-        <div>
-
-
-
-        </div>
-      </div>
     </div> <!-- /.main-cards -->
   </main>
 
